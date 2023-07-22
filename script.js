@@ -75,16 +75,63 @@ console.log(userName[2]);
 
 console.log(userName.indexOf("e"));
 
-
 // slice
 console.log(userName.slice(0, 5));
 
-let str = 'i love javascript';
+let str = "i love javascript";
 
-str.lastIndexOf('javascript').toUpperCase
+str.lastIndexOf("javascript").toUpperCase;
 
 console.log(str);
 
+// dom
+let emptyPara = document.getElementById("para");
 
+emptyPara.textContent = "i love javascript";
 
+emptyPara.style =
+	"color: blue; font-size: 3rem; text-align: center; text-transform: capitalize;";
 
+let myBtn = document.getElementById("btn");
+
+let btnWrapper = document.querySelector(".button-div");
+
+btnWrapper.style = "margin-inline: auto display: flex; flex-direction: column";
+
+myBtn.textContent = "add 2";
+myBtn.style = "border: none; padding: 1rem; color: darkgreen";
+
+let divContainer = document.querySelector(".div");
+divContainer.innerHTML = '<p id="div-p">0</p>';
+let pTag = document.querySelector("#div-p");
+
+function addtwo() {
+	pTag.textContent = Number(pTag.textContent) + 2;
+}
+
+myBtn.addEventListener("click", addtwo);
+
+let imgDiv = document.querySelector(".img-div");
+imgDiv.style =
+	"width: 35%; aspect-ratio: 1; margin-inline: auto; display: flex; flex-direction:column;";
+
+let closeFace = document.querySelector("#close-face");
+let openFace = document.querySelector("#open-face");
+let toggleBtn = document.querySelector("#toggle-btn");
+
+closeFace.style.display = "none";
+let close = false;
+
+function toggleImg() {
+	if (close == false) {
+		closeFace.style.display = "inline-block";
+		openFace.style.display = "none";
+		close = true;
+	} else {
+		closeFace.style.display = "none";
+		openFace.style.display = "inline-block";
+		close = false;
+	}
+}
+
+toggleBtn.addEventListener("click", toggleImg);
