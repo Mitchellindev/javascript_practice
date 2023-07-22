@@ -135,3 +135,15 @@ function toggleImg() {
 }
 
 toggleBtn.addEventListener("click", toggleImg);
+
+// setInterval(() => {
+// 	if (close == false) {
+// 		closeFace.style.display = "inline-block";
+// 		openFace.style.display = "none";
+// 		close = true;
+// 	} else {
+// 		closeFace.style.display = "none";
+// 		openFace.style.display = "inline-block";
+// 		close = false;
+// 	}
+// }, 2000);
