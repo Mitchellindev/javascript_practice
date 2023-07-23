@@ -147,3 +147,37 @@ toggleBtn.addEventListener("click", toggleImg);
 // 		close = false;
 // 	}
 // }, 2000);
+
+// loops
+
+// starting position, condition, increment or decrement
+for (let i = 0; i < 20; i++) {
+	console.log(i);
+}
+
+//reverse
+for (let i = 10; i >= 0; i--) {
+	console.log(i);
+}
+
+//looping through arrays
+
+const cities = [
+	"Lagos",
+	"Abuja",
+	"Port Harcourt",
+	"Asaba",
+	"Benin",
+	"Kaduna",
+	"Enugu",
+];
+
+for (let i = 0; i < cities.length; i++) {
+	console.log(cities[i].toUpperCase());
+}
+
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+for (let i = 0; i < numbers.length; i++) {
+	console.log(numbers[i]);
+}
